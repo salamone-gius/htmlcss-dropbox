@@ -6,29 +6,39 @@
 }
 
 
+
 /*--------- COMMONS ---------*/
 body {
     font-family: 'Open Sans', sans-serif;
 }
 
 .big-container {
-    max-width: 1300px;
+    max-width: 1200px;
     margin: auto;
+    border: 2px solid red; /* -----da togliere----- */
 }
 
 .small-container {
-    max-width: 1080px;
+    max-width: 1000px;
     margin: auto;
 }
 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 button {
-    padding: 5px 15px;
+    padding: 8px 15px;
     cursor: pointer;
+    border: none;
 }
 
 button.blue {
     background-color: rgb(1, 101, 255);
     color: white;
+    font-weight: 700;
 }
 
 a {
@@ -39,6 +49,31 @@ a {
 a:hover {
     color: rgb(43, 100, 255);
 }
+
+.txt.col {
+    max-width: 35%;
+}
+
+.img.col {
+    max-width: 65%;
+}
+
+.sx.col {
+    float: left;
+}
+
+.dx.col {
+    float: right;
+}
+
+h1, h2, h3, p {
+    padding-bottom: 1em;
+}
+
+.smaller-txt {
+    font-size: 12px;
+}
+
 
 
 /*--------- HEADER ---------*/
@@ -51,11 +86,14 @@ header {
     top: 0;
     width: 100vw;
     padding: 20px 0;
-    border: 2px solid red; /*-----da togliere-----*/
+    background-color: white;
+    z-index: 10;
+    border: 2px solid red; /* -----da togliere----- */
 }
 
 header .navbar {
-    min-width: calc(50% - 3px);
+    min-width: calc(50% - 25px);
+    margin: 0 10px;
 }
 
 .dx.navbar {
@@ -64,7 +102,7 @@ header .navbar {
 
 header li {
     list-style: none;
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
 header * {
@@ -72,6 +110,51 @@ header * {
     vertical-align: middle;
 }
 
-.fixed * {
-    border: 1px solid black; /*-----da togliere-----*/
+
+
+/*------------------------ MAIN ------------------------*/
+/*---------- HERO ----------*/
+
+h1 {
+    max-width: 80%;
+    margin: auto;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.hero.background {
+    background-color: rgb(180, 208, 230);
+    max-height: 620px;
+    margin-bottom: 100px;
+}
+
+.hero.big-container {
+    padding-top: 100px;
+}
+
+.hero .smaller-txt {
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.hero i {
+    font-size: 50px;
+}
+
+.hero img {
+    max-width: 700px;
+}
+
+
+
+/*---------- BUSINESS PLANS ----------*/
+
+
+
+
+
+
+
+main * {
+    border: 2px solid red; /* -----da togliere----- */
 }
