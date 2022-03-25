@@ -22,7 +22,7 @@ body {
 }
 
 button {
-    padding: 3px 15px;
+    padding: 5px 15px;
     cursor: pointer;
 }
 
@@ -51,34 +51,27 @@ header {
     top: 0;
     width: 100vw;
     padding: 20px 0;
-    border: 2px solid red;
+    border: 2px solid red; /*-----da togliere-----*/
 }
 
 header .navbar {
-    max-width: 50%;
+    min-width: calc(50% - 3px);
 }
 
 .dx.navbar {
-    /* text-align: right; */
+    text-align: right;
 }
 
 header li {
     list-style: none;
-    margin: 0 20px;
+    margin-left: 20px;
 }
 
 header * {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
 }
-
-.dx.navbar ul {
-    text-align: right;
-}
-
-
-
 
 .fixed * {
-    border: 1px solid black;
+    border: 1px solid black; /*-----da togliere-----*/
 }
