@@ -5,7 +5,80 @@
     box-sizing: border-box;
 }
 
+
 /*--------- COMMONS ---------*/
 body {
     font-family: 'Open Sans', sans-serif;
+}
+
+.big-container {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+}
+
+button {
+    padding: 3px 15px;
+    cursor: pointer;
+}
+
+button.blue {
+    background-color: rgb(1, 101, 255);
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: rgb(43, 100, 255);
+}
+
+
+/*--------- HEADER ---------*/
+header {
+    position: relative;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    padding: 20px 0;
+    border: 2px solid red;
+}
+
+header .navbar {
+    max-width: 50%;
+}
+
+.dx.navbar {
+    /* text-align: right; */
+}
+
+header li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+header * {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.dx.navbar ul {
+    text-align: right;
+}
+
+
+
+
+.fixed * {
+    border: 1px solid black;
 }
