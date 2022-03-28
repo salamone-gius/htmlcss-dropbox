@@ -72,7 +72,7 @@ a:hover {
 }
 
 .clearfix.row {
-    margin: 30px auto;
+    margin: 0 auto;
 }
 
 
@@ -87,6 +87,10 @@ h1 {
     margin: auto;
     font-size: 50px;
     font-weight: 900;
+}
+
+h2 {
+    font-size: 26px;
 }
 
 h3 {
@@ -235,7 +239,7 @@ section:nth-of-type(2) {
     margin: 25px 12%;
 }
 
-.plan-details a {
+.plan-details a, .customers a {
     text-decoration: underline;
     color: rgb(56, 108, 168);
 }
@@ -301,6 +305,89 @@ section:nth-of-type(2) {
 }
 
 
+/*--------- CUSTOMERS ---------*/
+.customers .small.container {
+    padding: 50px;
+}
+
+.customers .clearfix.row {
+    width: 100%;
+}
+
+.customers .col {
+    min-width: 30%;
+    float: left;
+}
+
+.customer.square {
+    min-width: 50%;
+    min-height: 200px;
+    position: relative;
+    float: left;
+}
+
+.customer.square img {
+    max-width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+}
+
+.customers .first.col, .customers .third.col {
+    max-width: 30%;
+}
+
+.customers .second.col {
+    max-width: 40%;
+    background-color: rgb(246, 246, 246);
+    padding: 50px;
+}
+
+.customers .second.col p:first-of-type {
+    margin: 35px 0;
+}
+
+.customers .second.col img {
+    width: 100px;
+    margin-bottom: 30px;
+}
+
+.customers .border-bottom {
+    width: 50px;
+}
+
+.designit.square {
+    background-color: rgb(163, 212, 156);
+}
+
+.asu.square {
+    background-color: rgb(99, 7, 44);
+}
+
+.florida.square {
+    background-color: rgb(2, 146, 206);
+}
+
+.topps.square {
+    background-color: rgb(253, 29, 29);
+}
+
+.wbr.square {
+    background-color: rgb(213, 0, 32);
+}
+
+.hearst.square {
+    background-color: rgb(180, 208, 230);
+}
+
+.lonely-planet.square {
+    background-color: rgb(14, 37, 130);
+}
+
+.clear-channel.square {
+    background-color: rgb(255, 217, 48);
+}
 
 
 
