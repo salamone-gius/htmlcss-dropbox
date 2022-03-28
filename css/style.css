@@ -193,6 +193,7 @@ header * {
     padding: 0 25px;
 }
 
+
 /*---------- BUSINESS PLANS ----------*/
 section:nth-of-type(2) {
     margin-top: 120px;
@@ -214,7 +215,7 @@ section:nth-of-type(2) {
 
 .plans .col {
     max-width: calc(33.3% - 20px);
-    min-height: 1100px;
+    min-height: 1000px;
     float: left;
     margin: 0 10px;
 }
@@ -229,7 +230,7 @@ section:nth-of-type(2) {
 }
 
 .plan-details > button {
-    margin: 25px 13%;
+    margin: 25px 12%;
 }
 
 .plan-details a {
@@ -243,7 +244,7 @@ section:nth-of-type(2) {
     display: inline-block;
 }
 
-.fa-list li::before {
+.checklist li::before {
     content: "\f00c";
     font: var(--fa-font-solid);
     color: rgb(56, 108, 168);
@@ -267,7 +268,23 @@ section:nth-of-type(2) {
 }
 
 
+/*---------- FIND A PARTNER ----------*/
+.find-a-partner img {
+    max-width: 500px;
+}
 
+.find-a-partner .clearfix.row {
+    padding: 20px;
+}
+
+.find-a-partner .txt.dx.col {
+    margin-top: 30px;
+}
+
+.find-a-partner button {
+    background-color: transparent;
+    border: 1px solid black;
+}
 
 
 
