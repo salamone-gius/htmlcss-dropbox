@@ -12,15 +12,16 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.big-container {
+.big.container {
     max-width: 1200px;
-    margin: auto;
-    border: 2px solid red; /* -----da togliere----- */
 }
 
-.small-container {
+.small.container {
     max-width: 1000px;
-    margin: auto;
+}
+
+.container {
+    margin: 20px auto;
 }
 
 .clearfix::after {
@@ -33,6 +34,10 @@ button {
     padding: 8px 15px;
     cursor: pointer;
     border: none;
+}
+
+main button {
+    margin-top: 25px;
 }
 
 button.blue {
@@ -66,17 +71,69 @@ a:hover {
     float: right;
 }
 
-h1, h2, h3, p {
-    padding-bottom: 1em;
+.clearfix.row {
+    margin: 30px auto;
+
+}
+
+
+
+
+/*--------- TYPO ---------*/
+h1, h2, h3, h4 {
+    padding-bottom: 0.6em;
+}
+
+h1 {
+    max-width: 80%;
+    margin: auto;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+h3 {
+    font-size: 22px;
 }
 
 .smaller-txt {
-    font-size: 12px;
+    font-size: 14px;
+}
+
+.heading {
+    padding-bottom: 30px;
+}
+
+.subtitle {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.center-txt {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+main ul {
+    margin: 50px 0;
+}
+
+main li {
+    margin: 25px 0;
+}
+
+.border-bottom {
+    border-bottom: 1px solid lightgray;
+}
+
+.grey-border {
+    border: 1px solid lightgray;
 }
 
 
-
-/*--------- HEADER ---------*/
+/*---------------------- HEADER ----------------------*/
 header {
     position: relative;
 }
@@ -85,10 +142,10 @@ header {
     position: fixed;
     top: 0;
     width: 100vw;
-    padding: 20px 0;
+    padding: 10px 0;
+    padding-right: 8px;
     background-color: white;
     z-index: 10;
-    border: 2px solid red; /* -----da togliere----- */
 }
 
 header .navbar {
@@ -101,7 +158,6 @@ header .navbar {
 }
 
 header li {
-    list-style: none;
     margin-left: 40px;
 }
 
@@ -114,22 +170,10 @@ header * {
 
 /*------------------------ MAIN ------------------------*/
 /*---------- HERO ----------*/
-
-h1 {
-    max-width: 80%;
-    margin: auto;
-    font-size: 50px;
-    font-weight: 900;
-}
-
 .hero.background {
     background-color: rgb(180, 208, 230);
-    max-height: 620px;
-    margin-bottom: 100px;
-}
-
-.hero.big-container {
-    padding-top: 100px;
+    max-height: 600px;
+    padding-top: 60px;
 }
 
 .hero .smaller-txt {
@@ -145,16 +189,91 @@ h1 {
     max-width: 700px;
 }
 
-
+.hero .clearfix.row {
+    padding: 0 25px;
+}
 
 /*---------- BUSINESS PLANS ----------*/
-
-
-
-
-
-
-
-main * {
-    border: 2px solid red; /* -----da togliere----- */
+section:nth-of-type(2) {
+    margin-top: 120px;
 }
+
+.radio-box {
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.col-body > .smaller-txt {
+    color: gray;
+}
+
+.plan-details > i, .plan-details > span {
+    font-size: 0.9em;
+    margin: 12px 0;
+}
+
+.plans .col {
+    max-width: calc(33.3% - 20px);
+    min-height: 1100px;
+    float: left;
+    margin: 0 10px;
+}
+
+.col-head {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.col-body {
+    padding: 25px;
+}
+
+.plan-details > button {
+    margin: 25px 13%;
+}
+
+.plan-details a {
+    text-decoration: underline;
+    color: rgb(56, 108, 168);
+}
+
+.plan-details div.border-bottom {
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.fa-list li::before {
+    content: "\f00c";
+    font: var(--fa-font-solid);
+    color: rgb(56, 108, 168);
+}
+
+.foot.grey-border {
+    max-width: 98%;
+    margin: auto;
+    position: relative;
+}
+
+.foot button {
+    padding: 10px 60px;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+}
+
+.foot.grey-border p {
+    margin-top: 35px;
+}
+
+
+
+
+
+
+
+
+
+/* main * {
+    border: 2px solid red;
+} */
