@@ -12,6 +12,10 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+section {
+    margin: 40px auto;
+}
+
 .big.container {
     max-width: 1200px;
 }
@@ -178,8 +182,8 @@ header * {
 /*---------- HERO ----------*/
 .hero.background {
     background-color: rgb(180, 208, 230);
-    max-height: 600px;
-    padding-top: 60px;
+    max-height: 570px;
+    padding-top: 50px;
 }
 
 .hero .smaller-txt {
@@ -203,6 +207,11 @@ header * {
 /*-------- BUSINESS PLANS --------*/
 section:nth-of-type(2) {
     margin-top: 120px;
+}
+
+.plans .radio {
+    margin-bottom: 30px;
+    padding-left: 10px;
 }
 
 .radio-box {
@@ -258,7 +267,7 @@ section:nth-of-type(2) {
 
 .foot.grey-border {
     max-width: 98%;
-    margin: auto;
+    margin: 40px auto;
     position: relative;
 }
 
@@ -307,7 +316,7 @@ section:nth-of-type(2) {
 
 /*--------- CUSTOMERS ---------*/
 .customers .small.container {
-    padding: 50px;
+    padding: 40px;
 }
 
 .customers .clearfix.row {
@@ -320,13 +329,16 @@ section:nth-of-type(2) {
 }
 
 .customer.square {
-    min-width: 50%;
-    min-height: 200px;
+    /* min-width: 50%;
+    min-height: 200px; */
+    width: 14.8vw;
+    height: 14.8vw;
     position: relative;
     float: left;
 }
 
 .customer.square img {
+    filter: invert(100%);
     max-width: 60%;
     position: absolute;
     top: 50%;
@@ -335,11 +347,12 @@ section:nth-of-type(2) {
 }
 
 .customers .first.col, .customers .third.col {
-    max-width: 30%;
+    width: 30%;
 }
 
 .customers .second.col {
-    max-width: 40%;
+    width: 40%;
+    min-height: 404px;
     background-color: rgb(246, 246, 246);
     padding: 50px;
 }
@@ -391,7 +404,28 @@ section:nth-of-type(2) {
 
 
 
+/*--------- FREE-TRIAL ---------*/
+.free-trial {
+    margin-top: -45px;
+    background-color: rgb(180, 208, 230);
+    min-height: 230px;
+}
 
+.free-trial .small.container{
+    position: relative;
+}
 
+.free-trial h2 {
+    color: rgb(94, 5, 33);
+    padding: 80px 0;
+}
+
+.free-trial button {
+    background-color: white;
+    padding: 10px 60px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
 
 
