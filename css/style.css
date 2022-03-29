@@ -98,7 +98,7 @@ h2 {
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .smaller-txt {
@@ -408,7 +408,7 @@ section:nth-of-type(2) {
 .free-trial {
     margin-top: -45px;
     background-color: rgb(180, 208, 230);
-    min-height: 230px;
+    /* min-height: 230px; */
 }
 
 .free-trial .small.container{
@@ -424,8 +424,26 @@ section:nth-of-type(2) {
     background-color: white;
     padding: 10px 60px;
     position: absolute;
-    top: 50px;
+    top: 55px;
     right: 0;
 }
 
 
+
+/*----------- FAQ -----------*/
+.faq .question {
+    border-top: 1px solid lightgray;
+    position: relative;
+    font-weight: 700;
+    padding: 35px 0;
+}
+
+.faq i {
+    position: absolute;
+    top: 35px;
+    right: 40px;
+}
+
+.faq h3 {
+    padding: 40px 0;
+}
